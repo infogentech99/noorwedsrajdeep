@@ -255,7 +255,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-20 md:gap-26 lg:gap-x-70">
               {events.map((event, i) => (
                 <div key={i} className="flex flex-col items-center text-center">
-                  <img src={event.image} alt={event.venue} className="w-95 h-auto md:w-76 lg:w-80"/>
+                  <img src={event.image} alt={event.title_ceremony} className="w-95 h-auto md:w-76 lg:w-80"/>
 
                   <h2 className="font-eb-garamond font-medium text-[36px] md:text-3xl lg:text-[42px] mt-4 text-[#FFC700]">
                     {event.title_ceremony}
