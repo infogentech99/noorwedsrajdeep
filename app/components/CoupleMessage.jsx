@@ -59,23 +59,23 @@ useEffect(() => {
 }, []);
   const testimonial = [
     {
-      img: "/assets/1.webp",
+      img: "/assets/couple_1.webp",
     },
 
     {
-      img: "/assets/2.webp",
+      img: "/assets/couple_2.webp",
     },
 
     {
-      img: "/assets/3.webp",
+      img: "/assets/couple_3.webp",
     },
 
     {
-      img: "/assets/4.webp",
+      img: "/assets/couple_4.webp",
     },
 
     {
-      img: "/assets/5.webp",
+      img: "/assets/couple_5.webp",
     },
   ];
 
