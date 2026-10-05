@@ -114,7 +114,7 @@ useEffect(() => {
                 <img
                   src={item.img}
                   alt=""
-                  className="w-full h-120 lg:h-125 3xl:h-200 object-cover rounded-[60px]"
+                  className="w-full h-100 lg:h-125 3xl:h-200 object-cover rounded-[60px]"
                 />
               </SwiperSlide>
             ))}

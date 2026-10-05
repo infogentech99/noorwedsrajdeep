@@ -252,7 +252,7 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center mt-20">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-20 md:gap-26 lg:gap-x-70">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-20 md:gap-26 lg:gap-x-70 px-14">
               {events.map((event, i) => (
                 <div key={i} className="flex flex-col items-center text-center">
                   <img src={event.image} alt={event.title_ceremony} className="w-95 h-auto md:w-76 lg:w-80"/>
@@ -291,19 +291,21 @@ export default function Home() {
 
       <CoupleMessage />
 
-      <div className="hidden md:block md:bg-[url('/assets/bg_four.webp')] bg-cover bg-no-repeat">
-        <div className="flex flex-col items-center md:h-176 lg:h-327 3xl:h-413">
-          {/* <img src="/assets/couple_logo.webp" alt="logo" width={250} height={300} className="md:w-23 md:h-22 md:mt-45 lg:w-43 lg:h-38 lg:mt-85 3xl:mt-108" /> */}
-        </div>
-      </div>
+ 
 
-      {/* Mobile Visible Section */}
-      <div className="md:hidden bg-[url('/assets/respo_four.webp')] bg-cover bg-no-repeat">
-        <div className="flex flex-col items-center h-250">
-          {/* <img src="/assets/couple_logo.webp" alt="logo" width={250} height={300} className="w-30 h-28 mt-37" /> */}
-        </div>
-      </div>
 
+<picture className="block w-full">
+  <source
+    media="(min-width: 768px)"
+    srcSet="/assets/bg_four.webp"
+  />
+
+  <img
+    src="/assets/respo_four.webp"
+    alt=""
+    className="block w-full h-auto"
+  />
+</picture>
       
      
     </>
