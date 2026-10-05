@@ -7,56 +7,52 @@ import { useEffect, useState } from "react";
 export default function CoupleMessage() {
   const TARGET_DATE = new Date("2026-11-13").getTime();
   const [timeLeft, setTimeLeft] = useState({
-  days: 14,
-  hours: 12,
-  minutes: 28,
-  seconds: 0, 
-});
+    days: 14,
+    hours: 12,
+    minutes: 28,
+    seconds: 0,
+  });
 
-useEffect(() => {
-  const updateCountdown = () => {
-    const now = new Date().getTime();
-    const diff = TARGET_DATE - now;
+  useEffect(() => {
+    const updateCountdown = () => {
+      const now = new Date().getTime();
+      const diff = TARGET_DATE - now;
 
-    if (diff <= 0) {
+      if (diff <= 0) {
+        setTimeLeft({
+          days: 0,
+          hours: 0,
+          minutes: 0,
+          seconds: 0,
+        });
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+      const hours = Math.floor(
+        (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+      );
+
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
       setTimeLeft({
-        days: 0,
-        hours: 0,
-        minutes: 0,
-        seconds: 0,
+        days,
+        hours,
+        minutes,
+        seconds,
       });
-      return;
-    }
+    };
 
-    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    updateCountdown();
 
-    const hours = Math.floor(
-      (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-    );
+    // Update every second
+    const interval = setInterval(updateCountdown, 1000);
 
-    const minutes = Math.floor(
-      (diff % (1000 * 60 * 60)) / (1000 * 60)
-    );
-
-    const seconds = Math.floor(
-      (diff % (1000 * 60)) / 1000
-    );
-
-    setTimeLeft({
-      days,
-      hours,
-      minutes,
-      seconds,
-    });
-  };
-
-  updateCountdown();
-
-  // Update every second
-  const interval = setInterval(updateCountdown, 1000);
-
-  return () => clearInterval(interval);
-}, []);
+    return () => clearInterval(interval);
+  }, []);
   const testimonial = [
     {
       img: "/assets/couple_1.webp",
@@ -168,7 +164,7 @@ useEffect(() => {
           A Guide For <br /> Guests
         </h1>
 
-        <div className="flex justify-center mt-20 pb-15 md:pb-24">
+        <div className="flex justify-center mt-20 pb-5 md:pb-24">
           <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-10 md:gap-14 lg:gap-0">
             <div className="flex flex-col items-center justify-center text-center">
               <img
@@ -226,33 +222,33 @@ useEffect(() => {
           effortless and enjoyable, we've gathered a few useful details below.
         </h2>
 
-
- <div className="flex flex-col items-center justify-center text-center mt-20">
-              <img
-                src="/assets/mother.webp"
-                alt="parking"
-                className="w-45 h-55 md:w-50 md:h-60 lg:w-55 lg:h-70"
-              />
-              <h2 className="font-eb-garamond font-medium text-xl md:text-2xl lg:text-3xl text-center mt-3 md:pt-2 lg:pt-2 lg:mt-4 lg:leading-tight px-3 md:px-0 text-[#FFC700]">
-          Her presence may be missed, but her love and blessings will 
-          <br className="hidden md:block" />
-          forever be woven into the beautiful beginning of her daughter’s new journey.
-        </h2>
-            </div>
-
-
+        <div className="flex flex-col items-center justify-center text-center mt-20 py-20">
+          <img
+            src="/assets/mother.webp"
+            alt="parking"
+            className="w-45 h-55 md:w-50 md:h-60 lg:w-55 lg:h-70"
+          />
+          <h2 className="font-eb-garamond font-medium text-xl md:text-2xl lg:text-3xl text-center mt-3 md:pt-2 lg:pt-2 lg:mt-4 lg:leading-tight px-3 md:px-0 text-[#FFC700]">
+            Her presence may be missed, but her love and blessings will
+            <br className="hidden md:block" />
+            forever be woven into the beautiful beginning of her daughter’s new
+            journey.
+          </h2>
+        </div>
 
         <div className="flex flex-col items-center h-80 md:h-100 lg:h-110 md:gap-2">
           <h2 className="font-parisienne-regular font-normal text-3xl md:text-4xl lg:text-6xl text-center pt-15 lg:pt-20 mt-4 text-[#FFC700]">
             The Journey Begins
           </h2>
           <p className="font-eb-garamond font-medium text-base md:text-xl lg:text-[28px] text-center mt-2 md:mt-4 text-[#FFC700] px-10">
-            Surrounded by family and friends, we can't wait to celebrate <br className="md:block hidden"/>
+            Surrounded by family and friends, we can't wait to celebrate{" "}
+            <br className="md:block hidden" />
             this beautiful moment with you.
           </p>
           <hr className="w-54 md:w-66 lg:w-94 border lg:border-2 border-[#FFC700] my-3 md:my-3 lg:my-4 mt-4" />
           <h2 className="font-eb-garamond font-normal text-4xl md:text-5xl lg:text-[80px] text-center text-[#FFC700]">
-            {timeLeft.days}D - {timeLeft.hours}H - {timeLeft.minutes}M - {timeLeft.seconds}S
+            {timeLeft.days}D - {timeLeft.hours}H - {timeLeft.minutes}M -{" "}
+            {timeLeft.seconds}S
           </h2>
           <div className="flex flex-col gap-4 justify-center items-center mt-4">
             <a href="https://www.instagram.com/theinvitearc/" target="_blank">
