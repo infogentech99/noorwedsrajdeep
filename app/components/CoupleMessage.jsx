@@ -77,7 +77,7 @@ export default function CoupleMessage() {
 
   return (
     <div className="bg-[url('/assets/bg_three.webp')] bg-cover bg-no-repeat">
-      <div className="h-855 md:h-765 lg:h-920 3xl:h-1000">
+      <div className="h-880 md:h-860 lg:h-920 3xl:h-1030">
         <h2 className="font-eb-garamond font-medium text-xl md:text-2xl lg:text-[38px] text-center pt-12 md:pt-18 lg:pt-32 text-[#FFC700]">
           INTRODUCING
         </h2>
@@ -141,7 +141,6 @@ export default function CoupleMessage() {
                 9216335551
               </p>
             </a>
-
             <a
               href="https://wa.me/9216335552"
               target="_blank"
@@ -160,12 +159,40 @@ export default function CoupleMessage() {
           </div>
         </div>
 
-        <h1 className="font-parisienne-regular font-normal text-5xl md:text-6xl lg:text-[100px] text-center pt-30 md:pt-40 lg:pt-35 leading-tight text-[#FFC700]">
+
+
+            {/* <div className="flex flex-col items-center justify-center text-center mt-20 py-20">
+          <img
+            src="/assets/mother.webp"
+            alt="parking"
+            className="w-45 h-55 md:w-50 md:h-60 lg:w-55 lg:h-70"
+          />
+          <h2 className="font-eb-garamond font-medium text-xl md:text-2xl lg:text-3xl text-center mt-3 md:pt-2 lg:pt-2 lg:mt-4 lg:leading-tight px-3 md:px-0 text-[#FFC700]">
+            Her presence may be missed, but her love and blessings will
+            <br className="hidden md:block" />
+            forever be woven into the beautiful beginning of her daughter’s new
+            journey.
+          </h2>
+        </div> */}
+
+      <div className="flex flex-col items-center justify-center text-center mt-10 pt-20">
+          <img
+            src="/assets/mother_main.webp"
+            alt="parking"
+            className="w-[80%] h-[70%] md:w-[60%] md:h-[60%] lg:w-[20%] lg:h-[20%]"
+          />
+          
+        </div>
+
+
+
+
+        <h1 className="font-parisienne-regular font-normal text-5xl md:text-6xl lg:text-[100px] text-center pt-30 md:pt-40 lg:pt-20 leading-tight text-[#FFC700]">
           A Guide For <br /> Guests
         </h1>
 
         <div className="flex justify-center mt-20 pb-5 md:pb-24">
-          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-10 md:gap-14 lg:gap-0">
+          <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-10 md:gap-14 lg:gap-0 ">
             <div className="flex flex-col items-center justify-center text-center">
               <img
                 src="/assets/weather.webp"
@@ -222,19 +249,7 @@ export default function CoupleMessage() {
           effortless and enjoyable, we've gathered a few useful details below.
         </h2>
 
-        <div className="flex flex-col items-center justify-center text-center mt-20 py-20">
-          <img
-            src="/assets/mother.webp"
-            alt="parking"
-            className="w-45 h-55 md:w-50 md:h-60 lg:w-55 lg:h-70"
-          />
-          <h2 className="font-eb-garamond font-medium text-xl md:text-2xl lg:text-3xl text-center mt-3 md:pt-2 lg:pt-2 lg:mt-4 lg:leading-tight px-3 md:px-0 text-[#FFC700]">
-            Her presence may be missed, but her love and blessings will
-            <br className="hidden md:block" />
-            forever be woven into the beautiful beginning of her daughter’s new
-            journey.
-          </h2>
-        </div>
+    
 
         <div className="flex flex-col items-center h-80 md:h-100 lg:h-110 md:gap-2">
           <h2 className="font-parisienne-regular font-normal text-3xl md:text-4xl lg:text-6xl text-center pt-15 lg:pt-20 mt-4 text-[#FFC700]">

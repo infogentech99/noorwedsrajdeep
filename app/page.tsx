@@ -44,16 +44,15 @@ export default function Home() {
    {
       title_ceremony: "Mata Ki Chowki",
       image: "/assets/mata.webp",
-      date: "Saturday, November 4th 2026",
+      date: "Wednesday, November 4th 2026",
       time: "Join Us at 6 pm",
       venue: <>Old Shri Krishna Mandir, <br/>Model Town, Ludhiana</>,
-      link: "https://maps.app.goo.gl/zfjxZN6tKLc7UmE48",
     },
       
    {
       title_ceremony: "Shagun & Ring Ceremony",
       image: "/assets/shagun.webp",
-      date: "Saturday, November 11th 2026",
+      date: "Wednesday, November 11th 2026",
       time: "Join Us at 11 am",
        venue: <>The Borgo,<br/>  Bulara Road, Gill, Ludhiana.</>,
       link: "https://maps.app.goo.gl/Y1mkeBFLKP4zKHmE6",
@@ -62,16 +61,15 @@ export default function Home() {
     {
       title_ceremony: "Mehndi & Sangeet",
       image: "/assets/mehendi.webp",
-      date: "Saturday, November 11th 2026",
+      date: "Wednesday, November 11th 2026",
       time: "Join Us at 7 pm",
        venue: <>Radha Vallabh Mandir,<br/> Ghumar Mandi, Ludhiana </>,
-      link: "https://maps.app.goo.gl/X1zFEkg6Xy3UNcBJ7",
     },
 
     {
       title_ceremony: " Wedding Day",
       image: "/assets/wedding.webp",
-      date: "Saturday, November 13th 2026",
+      date: "Friday, November 13th 2026",
       time: "Join Us at 12 noon",
       venue: <>Victorian Castle <br/>Pakhowal Road, Dhaipai Ludhiana</>,
       link: "https://maps.app.goo.gl/D1fF85dtHiF59xCY9",
@@ -266,9 +264,16 @@ export default function Home() {
                     <span className="text-base lg:text-xl uppercase"> {event.venue} </span> 
                   </p>
 
-                  <a href={event.link} className="font-eb-garamond font-medium underline text-sm md:text-base lg:text-lg mt-2 text-[#FFC700]" target="_blank">
-                    View Directions
-                  </a>
+              {event.link && (
+  <a
+    href={event.link}
+    className="font-eb-garamond font-medium underline text-sm md:text-base lg:text-lg mt-2 text-[#FFC700]"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View Directions
+  </a>
+)}
                 </div>
               ))}
             </div>
@@ -290,8 +295,6 @@ export default function Home() {
       </div>
 
       <CoupleMessage />
-
- 
 
 
 <picture className="block w-full">
