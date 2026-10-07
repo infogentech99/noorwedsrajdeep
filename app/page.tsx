@@ -59,7 +59,7 @@ export default function Home() {
     }, 
   
     {
-      title_ceremony: "Mehndi & Sangeet",
+      title_ceremony: "Mehendi & Sangeet",
       image: "/assets/mehendi.webp",
       date: "Wednesday, November 11th 2026",
       time: "Join Us at 7 pm",
