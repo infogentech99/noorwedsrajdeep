@@ -218,16 +218,16 @@ export default function Home() {
              With the Heavenly Blessings Of Grandmother <br />Late Smt. Amita Rani <br />Sh. Baldev Raj Gupta
             </h2>
             <hr className="w-20 lg:w-30 border-[#FFC700] md:border-2 my-1 md:my-4" />
-            <h2 className="font-eb-garamond font-medium text-base md:text-lg lg:text-[26px] text-[#FFC700]">
+            <h2 className="font-eb-garamond font-medium text-xl md:text-2xl lg:text-3xl text-[#FFC700]">
               The Gupta Family
             </h2>
           </div>
-          <div className="text-center mt-8">
-            <h2 className="font-eb-garamond font-medium text-3xl md:text-4xl lg:text-6xl leading-tight lg:tracking-wide tracking-wider text-[#FFC700]">
+          <div className="text-center md:mt-8 mt-4">
+            {/* <h2 className="font-eb-garamond font-medium text-base md:text-lg lg:text-[26px] leading-tight lg:tracking-wide tracking-wider text-[#FFC700]">
               INVITES
-            </h2>
-            <p className="font-eb-garamond font-medium text-xl md:text-2xl lg:text-3xl mt-6 text-[#FFC700]">
-              you to join us in the wedding celebrations of
+            </h2> */}
+            <p className="font-eb-garamond font-medium text-xl md:text-2xl lg:text-3xl md:mt-6 text-[#FFC700] px-2">
+              Cordially Invites You to Join Them in the Joyous Wedding Celebrations of
             </p>
             <h2 className="font-parisienne-regular font-medium text-center mt-6 text-5xl md:text-6xl lg:text-[100px] leading-tight text-[#FFC700]">
              Noor

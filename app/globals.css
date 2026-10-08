@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
-
 @import "tailwindcss";
 
 :root {
@@ -65,6 +64,7 @@ body {
 .font-eb-garamond {
   font-family: "EB Garamond", serif;
 }
+
 
 .curved-edge {
   --c: 120px; 
