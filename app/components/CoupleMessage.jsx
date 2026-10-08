@@ -55,7 +55,7 @@ export default function CoupleMessage() {
   }, []);
   const testimonial = [
     {
-      img: "/assets/couple_1.webp",
+      img: "/assets/couple_1.jpg",
     },
 
     {
