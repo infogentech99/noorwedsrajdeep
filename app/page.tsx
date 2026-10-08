@@ -215,7 +215,7 @@ export default function Home() {
             </h2>
             <img src="/assets/ganesh.webp" alt="ganesh" className="w-28 h-auto md:w-41 md:h-53"/>
             <h2 className="font-eb-garamond font-medium text-[#FFC700] text-base md:text-2xl lg:text-3xl">
-             With the Heavenly Blessings Of Grandmother <br />Late Smt. Amita Rani
+             With the Heavenly Blessings Of Grandmother <br />Late Smt. Amita Rani <br /><br />Sh. Baldev Raj Gupta
             </h2>
             <hr className="w-20 lg:w-30 border-[#FFC700] md:border-2 my-1 md:my-4" />
             <h2 className="font-eb-garamond font-medium text-base md:text-lg lg:text-[26px] text-[#FFC700]">
